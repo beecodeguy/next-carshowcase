@@ -7,11 +7,12 @@ const CustomButton: FC<ICustomButtonProps> = ({
   title,
   containerStyles,
   handleClick,
+  btnType = "button",
 }) => {
   return (
     <button
       disabled={false}
-      type={"button"}
+      type={btnType}
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
